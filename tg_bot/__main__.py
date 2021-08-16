@@ -21,7 +21,7 @@ PM_START_TEXT = """
 
 *hello {}, My Name is {}!*
 
-*I'm a group admin bot powered by [NOOBX7](tg://user?id={}) *
+*I'm a group admin bot powered by* [NOOBX7](tg://user?id={})
 
 *And Also most popular group bot in telegram*
 
