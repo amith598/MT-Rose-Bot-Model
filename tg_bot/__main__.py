@@ -19,17 +19,13 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-*ഹായ് {}, എന്റെ പേര് {}!*
+*hello {}, My Name is {}!*
 
-*ഞാൻ* [ഇദ്ദേഹം](tg://user?id={}) *നോക്കി നടത്തുന്ന ഒരു അടിപൊളി അഡ്മിൻ ബോട്ടാണ്.*
+*I'm a group admin bot powered by [NOOBX7](tg://user?id={}) *
 
-*എന്നെ നിർമ്മിച്ചിരിക്കുന്നത് python3 യിൽ python-telegram-bot ലൈബ്രറി ഉപയോഗിച്ചാണ്. ഞാൻ പൂർണ്ണമായിട്ടും ഓപ്പൺസോഴ്സ്ഡ് ആണ്. എന്റെ കോഡ് നിങ്ങൾക്ക് തായ കാണുവാൻ സാധിക്കും.*
+*And Also most popular group bot in telegram*
 
-*എന്നെപ്പോലെ ഒരു അഡ്മിൻ ബോട്ടിനെ ഉണ്ടാക്കുവാൻ താഴെ കൊടുത്തിരിക്കുന്ന വീഡിയോ കാണുക.*
-
-*എന്റെ അപ്ഡേറ്റുകളെക്കുറിച്ചും പ്രവർത്തനത്തെപറ്റിയും അറിയുവാൻ അപ്ഡേറ്റ് ചാനൽ സബ്സ്ക്രൈബ് ചെയ്യുക.*
-
-*ലഭ്യമായ കമാന്റുകളെപ്പറ്റി അറിയുവാൻ /help അമർത്തുക.*
+*Hit /help to know what are the Command..*
 
 """
 
@@ -50,7 +46,7 @@ And the following:
 
 DONATE_STRING = """ *🙋‍♂️Hello Bro or Sis*!
 
-*😎Contect @Mrk_YT*
+*😎Contect @NOOBX7*
 
 *👉Clcik 👉 /donate*
 """
@@ -151,10 +147,10 @@ def start(bot: Bot, update: Update, args: List[str]):
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text="⭕️ Command Help ⭕️", url="https://t.me/{}?start=help".format(bot.username))],
-                     [InlineKeyboardButton(text="📢Updates", url="t.me/mo_tech_yt"), InlineKeyboardButton(text="❣️Video", url="https://youtu.be/wKL90i3cjPw"), InlineKeyboardButton(text="🤠Credits", url="https://github.com/jithumon/tgbot/graphs/contributors")],
+                     [InlineKeyboardButton(text="📢Developer", url="t.me/NOOBX7"), InlineKeyboardButton(text="❣️My Group", url="t.me/IoclixGroup"), InlineKeyboardButton(text="🤠Donate Us", url="https://paypal.me/noobx7")],
                      [InlineKeyboardButton(text="➕ Add me to your group ➕", url="t.me/{}?startgroup=true".format(bot.username)) ]]))
     else:
-        update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
+        update.effective_message.reply_text("I don't died...")
 
 
 # for test purposes
@@ -383,7 +379,7 @@ def donate(bot: Bot, update: Update):
     if chat.type == "private":
         update.effective_message.reply_text(DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 1493164653 and DONATION_LINK:
             update.effective_message.reply_text("**You can also donate to the person currently running me** "
                                                 "[👤here]({})".format(DONATION_LINK),
                                                 parse_mode=ParseMode.MARKDOWN)
