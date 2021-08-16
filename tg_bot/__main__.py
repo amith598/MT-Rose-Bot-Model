@@ -19,13 +19,13 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-*hello {}, My Name is {}!*
+hello {}, My Name is {}!
 
-*I'm a group admin bot powered by* [NOOBX7](tg://user?id={})
+I'm a group admin bot powered by [NOOBX7](tg://user?id={})
 
-*And Also most popular group bot in telegram*
+And Also most popular group bot in telegram
 
-*Hit /help to know what are the Command..*
+Hit /help to know what are the Command
 
 """
 
